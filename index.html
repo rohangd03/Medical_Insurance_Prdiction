@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Charges Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="info">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> Rohan Ghosh Dastidar</p>
+            <p><strong>Roll Number:</strong> 22CH30028</p>
+            <p><strong>Course:</strong> Application of Machine Learning in Biological Systems</p>
+            <p><strong>Assignment 1: Implementation of Linear Regression</strong></p>
+        </div>
+        
+        <div class="form-container">
+            <h1>Medical Insurance Prediction Algorithm</h1>
+            <form id="prediction-form">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="sex">Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+                
+                <label for="bmi">BMI: (Healthy range 18.5 - 24.9)</label>
+                <input type="number" id="bmi" name="bmi" required step="0.1">
+                
+                <label for="children">Children:</label>
+                <input type="number" id="children" name="children" required>
+                
+                <label for="smoker">Smoker:</label>
+                <select id="smoker" name="smoker" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+                
+                <label for="region">Region:</label>
+                <select id="region" name="region" required>
+                    <option value="0">Southeast</option>
+                    <option value="1">Southwest</option>
+                    <option value="2">Northeast</option>
+                    <option value="3">Northwest</option>
+                </select>
+                
+                <button type="button" onclick="predictCharges()">Predict</button>
+            </form>
+            
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
